@@ -22,6 +22,7 @@ export class ProductComponent implements OnInit {
     this.productService.getProducts().subscribe(response => {
       this.products = response.data
       this.dataLoaded = true;
+      
     })
   }
 }
